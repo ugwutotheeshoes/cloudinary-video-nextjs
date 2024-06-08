@@ -1,7 +1,7 @@
 "use client"
 import { CldVideoPlayer } from 'next-cloudinary';
 import 'next-cloudinary/dist/cld-video-player.css';
-import { upload } from './actions/upload';
+import { upload } from '../actions/upload';
 import { useFormState } from 'react-dom';
 
 export default function Home() {
