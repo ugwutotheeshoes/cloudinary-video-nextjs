@@ -20,8 +20,8 @@ export async function upload(previousState: string | undefined | null, formData:
       resource_type: 'video',
       public_id: 'my_video',
     });
-    const url = response.secure_url;
-    return url
+    previousState = response.secure_url;
+    return previousState
   } catch (error: any) {
     console.error(error);
   }
